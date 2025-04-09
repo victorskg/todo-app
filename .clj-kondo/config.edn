@@ -1,0 +1,9 @@
+{:lint-as {schema.core/defprotocol clojure.core/defprotocol
+           schema.core/defrecord clojure.core/defrecord}
+ :linters {:clojure-lsp/unused-public-var {:exclude-regex #{"generators.*"}}
+           :discouraged-var {common-core.types.loose-enum/from-enum {:message "Use common-core.schema/enum-or instead"}
+                             common-core.types.loose-enum/->LooseEnum {:message "Use common-core.schema/enum-or instead"}
+                             common-test.uuid/uuid {:message "Use clojure.core/random-uuid instead", :level :warning}
+                             common-core.misc/random-uuid {:message "Use clojure.core/random-uuid instead", :level :warning}
+                             common-core.test-helpers/uuid {:message "Use clojure.core/random-uuid instead", :level :warning}}}
+ :config-paths ["nubank/codestyle"]}

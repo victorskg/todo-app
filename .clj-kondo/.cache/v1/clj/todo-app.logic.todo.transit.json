@@ -1,0 +1,1 @@
+["^ ","~$finish-todo!",["^ ","~:row",5,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$todo-app.logic.todo","~:top-ns","^7","~:arities",["^ ","~i1",["^ ","~:ret","~:associative"]]],"~:filename","src/todo_app/logic/todo.clj"]
